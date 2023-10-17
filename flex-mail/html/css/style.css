@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Mynerve', cursive;
+}
+
+#mailcontainer, #mail, #sidebarcontainer, #sidebar, #sendmail {
+    display: none;
+}
+
+#mailcontainer {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 100px auto;
+    top: -150px;
+}
+
+#mail, #navbar, #mail > h1, #subject > p, #mailtext, #writemail, #formemail, #formsubject, #formtext, #formsubmit {
+    transition: all 0.6s;
+    display: flex;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#mail {
+    overflow: hidden;
+    width: 600px;
+    height: 900px;
+    background-image: url(../img/paper.png);
+    background-size: cover;
+    right: 40vh;
+    top: 10vh;
+}
+
+#mail > h1 {
+    font-size: 3vh;
+    left: 4.5vh;
+    top: 2vh;
+}
+
+#mail > h1 > span {
+    color: blue;
+    margin-left: 15px;
+}
+
+#subject > p {
+    top: 7vh;
+    left: 3vh;
+    font-size: 3vh;
+}
+
+#mailtext {
+    width: 525px;
+    top: 14vh;
+    left: 3vh;
+    font-size: 2vh;
+}
+
+#sendmail {
+    bottom: 30px;
+    left: 3vh;
+}
+
+/* Mail sidebar */
+#sidebarcontainer h1{
+    color: white;
+    position: absolute;
+    top: 132px;
+}
+
+#sidebar {
+    z-index: 1;
+    position: relative;
+    width: 30%;
+    text-align: left;
+    background-color: beige;
+    max-height: 500px;
+    overflow: scroll;
+    top: 180px;
+}
+
+.fa-trash, #sidebar p {
+    display:inline-block;
+    transition: all 0.3s;
+    transition-timing-function: ease;
+}
+
+.fa-trash:hover {
+    color: rgb(210, 70, 70);
+    cursor: pointer;
+    transform: rotate(5deg) scale(1.2);
+}
+
+#sidebar p {
+    font-size: 2vh;
+    margin: 0.8vh 0.8vh 0.8vh 1.6vh;
+}
+
+#sidebar p:hover {
+    cursor: pointer;
+    Transform: scale(1.05);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+#sidebar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* WRITE MAIL */
+#writemail {
+    overflow: hidden;
+    width: 600px;
+    height: 900px;
+    background-image: url(../img/paper.png);
+    background-size: cover;
+    right: 40vh;
+    top: 10vh;
+}
+
+#formemail {
+    font-size: 3vh;
+    left: 4.5vh;
+    top: 2vh;
+}
+
+#formsubject {
+    top: 7vh;
+    left: 3vh;
+    font-size: 3vh;
+}
+
+#formtext {
+    top: 14vh;
+    left: 3vh;
+    font-size: 2vh;
+}
+
+#formsubmit {
+    bottom: 30px;
+    left: 3vh;
+}

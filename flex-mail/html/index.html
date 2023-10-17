@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flex Mailing</title>
+</head>
+<body>
+    <div id="sidebarcontainer">
+        <h1>Mijn briefjes</h1>
+        <div id="sidebar">
+        </div>
+    </div>
+    <div id="mailcontainer">
+        <div id="mail">
+            <h1>FROM: <span id="email">anonymouse@gmail.be</span></h1>
+            <div id="subject">
+                <p>Subject</p>
+            </div>
+            <p id="mailtext"></p>
+            <form>
+                <span id="sendmail">
+                    <input type="submit" value="Send">
+                </span>
+            </form>
+        </div>
+        <div id="writemail">
+            <form>
+                <span id="formemail">
+                    <label for="formemail">Email</label><br/> 
+                    <input type="text" name="formemail" id="fm">
+                </span>
+                <span id="formsubject">
+                    <label for="formsubject">Subject</label><br/> 
+                    <input type="text" name="formsubject" id="fs">
+                </span>
+                <span id="formtext">
+                    <label for="formtext">Text</label><br/> 
+                    <textarea id="ft" name="freeform" rows="4" cols="50">Enter text here...</textarea>
+                </span>
+                <span id="formsubmit">
+                    <input type="submit" value="Submit">
+                </span>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
